@@ -11,21 +11,31 @@
         <link href="/static/css/styles.css" rel="stylesheet">
 
         <title>PauseMIT_main_page</title>
+        <!--
+            Sakeths script to call the api every second and output the data goes here.
+        -->
+        <script >
+            function postData(){
+                
+                // grabs output element and gives it the value that we want to output
+                document.getElementById("spacedList").setAttribute("value", "1.0 2.0 3.0 4.0");
+            }
+        </script>
     </head>
+
     <body>
         <div class="container-fluid">
             <div class="d-flex justify-content-center mt-3">
                 <iframe  width="560" height="315" src="https://www.youtube.com/embed/nJcTPpVlsLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            
+            <!-- we have a button that uses the function defined in script to change the value of the output-->
             <div class="d-flex justify-content-center mt-4">
-                <form class="padding-lg" action="/analyze" method="get">
-                    <button class="btn btn-primary" type="submit">Click me to go to the other page</button>
+                <form class="padding-lg" action="/analyze" method="post">
+                    <button onclick="postData()" class="btn btn-primary" type="submit">Click me to go to the other page</button>
+                    <input id="spacedList" type="hidden" value="placeholder" name="data"></input>
                 </form>
             </div>
-            
-            
         </div>
-       
     </body>
+
 </html>

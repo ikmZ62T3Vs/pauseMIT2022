@@ -14,10 +14,19 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="d-flex justify-content-center mt-3">
-                <div>
-                    This div is not empty
-                </div>
+            <div class="d-flex justify-content-center">
+                <table>
+                    <tr>
+                        <th> Troublsome time stamps</th>
+                    </tr>
+    
+                    {% for time in times %}
+                    <tr class="d-flex justify-content-center"> 
+                        <td> {{ time }} </td>
+                     </tr>
+                    {% endfor %}
+                    
+                </table>
             </div>
             <form action="/" method="get" class="d-flex justify-content-center mt-3">
                 <button class="btn btn-primary" type="submit">Click me to go home</button>
