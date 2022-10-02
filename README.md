@@ -3,12 +3,12 @@
 
 #Work in your terminal and navigate to the pauseMIT directory
 
-#We need flask, and the way the internet says to run it without fucking with your machine is to activate a virtual environment. 
+#We need flask, and the way the internet says to run it without messing with your machine is to activate a virtual environment. 
 
 source env/bin/activate
 
 
-#we need to download the packages so make sure your pip install shit works and download flask
+#we need to download the packages so make sure your pip install works and download flask
 
 python3 -m pip install Flask
 
