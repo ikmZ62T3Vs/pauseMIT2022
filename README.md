@@ -16,7 +16,7 @@ python3 -m pip install Flask
 #Now we need to go to where we actually create a flask object in python, so navigate to the app directory
 
 
-export FLASK_APP=\ _\_init\_\_.py
+export FLASK_APP= \_\_init\_\_.py
 
 #from now on to check how things are going just  type
 flask run
